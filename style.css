@@ -32,12 +32,12 @@ section {
   scroll-snap-align: start;
 }
 section:nth-child(1) {
-  background: rgb(60, 60, 60);
+  background: rgb(24, 24, 24);
   scroll-snap-align: start;
 }
 section:nth-child(2) {
     background-image: url(robot.png);
-    background-color: lightblue;
+    background-color: rgb(24, 24, 24);
     scroll-snap-align: start;
 }
 section:nth-child(3) {
