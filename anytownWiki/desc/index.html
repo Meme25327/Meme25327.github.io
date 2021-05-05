@@ -1,0 +1,147 @@
+<html lang="en">
+    <head>
+        <style>
+            figure {
+                margin: 0;
+                width: fit-content;
+            }
+            
+            figcaption {
+              background-color: black;
+              color: white;
+              font-style: italic;
+              text-align: center;
+              width: 75%;
+            }
+
+            body {
+                font: sans-serif;
+            }
+
+            .main {
+                height: fit-content !important;
+            }
+            </style>
+        <script>
+            function getRndInteger(min, max) {
+                return Math.floor(Math.random() * (max - min)) + min;
+            }
+            function sleep(ms) {
+                return new Promise(resolve => setTimeout(resolve, ms));
+            }
+            async function popCount() {
+                var initCount = getRndInteger(5000, 10000)
+                document.getElementById("pop").innerHTML = initCount;
+                var count = "";
+                var i;
+                for (i = 0; i < 2000; i++) {
+                    count = initCount - i;
+                    await sleep(2000);
+                    document.getElementById("pop").innerHTML = count;
+                }
+            }
+        </script>
+        <meta charset="utf-8">
+
+    <title>About | Anytown, Ohio</title>
+    <meta name="description" content="The Official Unofficial Wiki for Anytown, Ohio!">
+
+      <link rel="stylesheet" href="../style.css">
+
+    </head>
+
+    <body onload = "popCount()">
+            <div class = "centered" style="padding-bottom: 2%;">
+                <div class = "main">
+                    <div class = "centered">
+                        <h1 style="display: block;">Anytown, Ohio</h1>
+                        <br>
+                    </div>
+                    <div style="display:flex;justify-content:flex-end;align-items:center;">
+                        <img src = "images/map.png" style="width: 50%; display: block;">
+                    </div>
+                    <div style="display:flex;justify-content:flex-end;align-items:center;">
+                        <p style="font: sans-serif;">
+                            Anytown on the map of Ohio State
+                        </p>
+                    </div>
+                    <div style="display:flex;justify-content:flex-end;align-items:center;">
+                        <!-- <b><p id = "pop" style = "font: 16.8px sans-serif;"></p></b> -->
+                    </div>
+                    <p style = "font: 20px sans-serif;">
+                        Anytown (/ˈɛnɪ'taʊn/) is a town in Anytown County, Ohio, United States. It is located in western Ohio, on the bank of the Tuscarawas river. It is roughly 30 miles away from Coshincton, Ohio,
+                        and roughly 42 miles away from Cambridge, Ohio.
+                    </p>
+                    <br>
+                    <br>
+                    <h1>History</h1>
+                    <p style = "font: 20px sans-serif;">
+                        Unlike other towns in the state of Ohio, Anytown was not initially settled by indigenous people. It was created in 1803 (exact date unknown), for the purposes of the Ohio Bar Exam. A fake town was
+                        required to set the questions in, so as to avoid any issues with similarities to other cases.
+                        <br>
+                        <br>
+                        Since then, Anytown has become notorious for its crimes' outlandishness. Many of those crimes are actually murky when it comes to legality, and there's often no clear cut perpetrator in those cases.
+                        <br>
+                        <br>
+                        After the Treaty of Greenville (1795), the Ohio Country was opened to European-American settlement. They were mostly farmers in the early years.
+                        <br>
+                        <br>
+                        In 1886, an idea by a local printer gave rise to the specialty advertising industry, which, from its "birth" in Anytown, eventually developed into various manufacturing companies all over the
+                        country. Today, four specialty advertising companies still thrive in Anytown.
+                        <div class = "centered">
+                            <img src = "../images/anytown.png" style="width: 50%; border: 2px solid black;">
+                            <br>
+                        </div>
+                        <div class = "centered">
+                            <p>
+                                Anytown Town Hall and surrounding downtown, with the Tuscarawas river in the background.
+                            </p>
+                        </div>
+                    </p>
+                    <h1>Geography</h1>
+                    <p style="font: 20px sans-serif;">
+                        According to the United States Census Bureau, the town has a total area of 8.20 square miles (21.24 km²), of which 8.08 square miles (20.93 km²) is land and 0.12 square miles (0.31 km²) is water.
+                        It sits on the bank of the Tuscarawas river.
+                    </p>
+                    <h1>Demographics</h1>
+                    <p style="font: 20px sans-serif;">
+                        According to the census of 2021, the population of Anytown, Ohio is <span id = "pop"></span>.
+                    </p>
+                    <p style="font: 20px sans-serif;">
+                        The median income for a household in the town was $31,098, and the median income for a family was $42,088. Males had a median income of $31,163 versus $22,130 for females. The per capita income
+                        for the town was $17,436. About 6.8% of families and 8.3% of the population were below the poverty line, including 7.3% of those under age 18 and 6.4% of those age 65 or over.
+                        <br>
+                        <br>
+                        The median age in the town was 42.9 years. 21.7% of residents were under the age of 18; 7.7% were between the ages of 18 and 24; 23.2% were from 25 to 44; 27% were from 45 to 64; and 20.5% were
+                        65 years of age or older. The gender makeup of the town was 46.8% male and 53.2% female.
+                    </p>
+                    <h1>Education</h1>
+                    <p style = "font: 20px sans-serif;">
+                        The city is primarily served by the Anytown School District which operates one elementary school (grades K-6) and one high school (grades 7-12). Anytown Elementary, built in 2013, and
+                        Anytown High School are located on the same campus along Cambridge Road.
+                    </p>
+                    <h1>Media</h1>
+                    <h3>Newspapers</h3>
+                    <p style = "font: 20px sans-serif;">
+                        Anytown is served by two print newspapers:
+                        <ul>
+                            <li style = "font: 20px sans-serif;">
+                                <i>The Anytown Tribune</i>, a daily newspaper owned by Gannett
+                            </li>
+                            <li style = "font: 20px sans-serif;">
+                                <i>The Anytown Beacon</i>, a locally-owned newspaper published weekly
+                            </li>
+                        </ul>
+                    </p>
+                    <h3>Radio</h3>
+                    <p style = "font: 20px sans-serif;">
+                        WTFL radio, locally-owned by Anytown Broadcasting, with an adult contemporary format on their 99.3 FM frequency and country formats on their 1560 AM and 102.7 FM frequencies.
+                        <br>
+                        <br>
+                        WHDD, broadcasting modern pop music at 89.5 FM, is also licensed to the city.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

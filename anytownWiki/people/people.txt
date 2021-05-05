@@ -1,0 +1,22 @@
+mom - stapler, carjacking
+thief - stapler
+daughter - stapler
+dan - wings
+amy - wings
+chris - wings
+bob - wings
+robber - ballad
+lady - ballad
+witness - ballad
+cop - ballad, arson
+jogger - ballad
+attorney - ballad
+joe - arson
+adam - arson
+flame - arson
+baby - carjacking
+carjacker - carjacking
+bystander - carjacking
+doctor pharm - pharm
+neighbor - pharm
+coby - pharm
