@@ -1,6 +1,6 @@
 body {
     background-image: url(images/anytown.png);
-    height: 100%;
+    min-height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -27,4 +27,16 @@ body {
     /* height: 1080px; */
     width: 1038px;
     min-height: 100vh;
+}
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+    float: left;
+    width: 50%;
+}
+  
+  /* Clear floats after image containers */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
 }
