@@ -20,3 +20,7 @@ bystander - carjacking
 doctor pharm - pharm
 neighbor - pharm
 coby - pharm
+worker - ds
+coworker - ds
+patron - ds
+shoplifter - ds
