@@ -1,0 +1,19 @@
+body {
+    background-color: rgb(138, 3, 3);
+    min-height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font: sans-serif;
+}
+
+a {
+    color: white;
+}
