@@ -11,6 +11,9 @@
       <script>
         window.onload = function() {
             document.getElementById("my_audio").play();
+            fire = document.getElementById("fire");
+            fire.volume = 0.1;
+            fire.play();
         }
       </script>
 
@@ -18,6 +21,7 @@
 
     <body id = "fullPage" style="color: white;">
         <audio src="greet.mp3" id="my_audio"></audio>
+        <audio src="fire.mp3" id="fire" loop></audio>
         <script type="text/javascript">
             window.onload=function(){
                 document.getElementById("my_audio").play();
