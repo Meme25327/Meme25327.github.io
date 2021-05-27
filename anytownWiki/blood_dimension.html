@@ -9,23 +9,17 @@
       <!-- <link rel="icon" type="image/png" href="favicon.ico"> -->
       <script src = "scripts/blood_dimension.js"></script>
       <script>
-        window.onload = function() {
-            document.getElementById("my_audio").play();
-            fire = document.getElementById("fire");
-            fire.volume = 0.1;
-            fire.play();
-        }
+        window.onload = audioPlay();
 
         function audioPlay() {
             audio = new Audio("greet.mp3");
-
-            audio.addEventListener('ended',function(){
+        }
+        audio.addEventListener('ended',function(){
             audio.src = "fire.mp3";
             audio.pause();
             audio.load();
             audio.play();
-        }
-    });
+        });
       </script>
 
     </head>
