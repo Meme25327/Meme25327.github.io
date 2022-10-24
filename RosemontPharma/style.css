@@ -1,0 +1,106 @@
+/*
+sea-foam: #aed6dc
+salmon: #ff9a8d
+almond: #f5f0e1
+navy: #4a536b
+*/
+
+html, body {
+    margin: 0;
+}
+
+body {
+    background-color: #aed6dc;
+    overflow-x: hidden;
+    font-family: verdana;
+}
+  
+h1 {
+    color: white;
+    text-align: center;
+}
+  
+p {
+    font-family: verdana;
+    font-size: 20px;
+}
+
+.center {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.right-curve {
+    padding-right: 50vw;
+    height: 20vw;
+    width: 150px;
+    background-color:#f5f0e1;
+    padding-left: 0%;
+    border-top-right-radius: 15% 50%;
+    border-bottom-right-radius: 15% 50%;
+}
+
+.left-curve {
+    padding-left: 50vw;
+    height: 20vw;
+    width: 300px;
+    background-color:#f5f0e1;
+    padding-right: 0%;
+    border-top-left-radius: 15% 50%;
+    border-bottom-left-radius: 15% 50%;
+}
+
+/* implementation of left-curve
+
+    <div style = "padding-top: 150px;">
+        <div style = "padding-left: 35vw;">
+            <div class = "left-curve"></div>
+        </div>
+    </div>
+
+*/
+
+/* Style the navbar */
+#navbar {
+    overflow: hidden;
+    background-color: #4a536b;
+    width: 100%;
+    padding: 14px;
+}
+  
+/* Navbar links */
+#navbar a {
+    color: #f2f2f2;
+    text-align: center;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    text-decoration: none;
+    padding-inline: 24px;
+}
+
+#navbar a:hover {
+    background-color: #ff9a8d;
+    color:#4a536b;
+    transition-duration: 0.1s;
+    border-top-left-radius: 20% 50%;
+    border-bottom-left-radius: 20% 50%;
+    border-top-right-radius: 20% 50%;
+    border-bottom-right-radius: 20% 50%;
+}
+  
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+  
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+    padding-top: 60px;
+}
+
+.gradient-text {
+    background: linear-gradient(0deg, #00000088 30%, #ffffff44 100%);
+}
